@@ -5,6 +5,7 @@ import Properties from './components/Properties'
 import Property_2 from './components/Property_2'
 import People from './people'
 import Signup from './signup'
+import Footer from './components/Footer'
 
 function App() {
   const signupRef = useRef(null);
@@ -26,6 +27,7 @@ function App() {
     <div ref={signupRef}>
         <Signup />
     </div>
+    <Footer/>
   </>;
 }
 
