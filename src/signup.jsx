@@ -1,5 +1,5 @@
 function Signup() {
-    return <>
+    return <div id="signup">
         <div className="flex w-full h-80 justify-center items-center text-white flex-col bg-[url('./src/assets/bg-masthead.jpg')] bg-cover bg-center">
             <div className="flex w-2/4 justify-center items-center text-center tracking-widest">
                 <h1 className="text-3xl leading-tight font-semibold">Ready to get started? Sign up now!</h1>
@@ -11,7 +11,7 @@ function Signup() {
                 <button className="mt-5 ml-4 w-24 h-16 bg-blue-600 text-white rounded-lg">Submit</button>
             </div>
         </div>
-    </>;
+    </div>;
 }
   
 export default Signup;
