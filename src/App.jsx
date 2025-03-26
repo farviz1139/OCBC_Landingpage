@@ -9,6 +9,7 @@ import Signup from './signup';
 import Footer from './components/Footer';
 import EnquiryForm from './components/EnquiryForm';
 import Calculator from './calculator';
+import Todo from './todo';
 
 function App() {
   const signupRef = useRef(null);
@@ -46,6 +47,9 @@ function App() {
         />
         {/* Calculator Page */}
         <Route path="/calculator" element={<Calculator />} />
+
+        {/* TodoList Page */}
+        <Route path="/todo" element={<Todo />} />
       </Routes>
     </>
   );
