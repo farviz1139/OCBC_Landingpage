@@ -10,10 +10,37 @@ function EnquiryForm({ isOpen, onClose }) {
   const [number, setNumber] = useState("");
   const [message, setMessage] = useState("");
 
+  const validateForm = () => {
+        if (!name.trim() || !email.trim() || !number.trim() || !message.trim()) {
+            alert('All fields are required')
+            return false
+        }
+
+        if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+            alert('Invalid email address')
+            return false
+        }
+
+
+        if (!number.match(/^[89]\d{7}$/)) {
+            alert("Invalid Phone Number !!");
+            return false
+        }
+
+        if (!message.trim()) {
+            alert("Message cannot be empty")
+            return false
+        }
+
+        return true
+  }
+
   const handleSubmit = () => {
-    console.log({ name, email, number, message });
-    alert(`Thanks for the enquiry ${name}, we will get back to you soon!`);
-    onClose();
+    if (validateForm()) {
+        console.log({ name, email, number, message });
+        alert(`Thanks for the enquiry ${name}, we will get back to you soon!`);
+        onClose();
+    }
   };
 
   return (
