@@ -10,6 +10,7 @@ import Footer from './components/Footer';
 import EnquiryForm from './components/EnquiryForm';
 import Calculator from './calculator';
 import Todo from './todo';
+import Shop from './shop';
 
 function App() {
   const signupRef = useRef(null);
@@ -50,6 +51,9 @@ function App() {
 
         {/* TodoList Page */}
         <Route path="/todo" element={<Todo />} />
+
+        {/* Shop Page */}
+        <Route path="/shop" element={<Shop />} />
       </Routes>
     </>
   );
