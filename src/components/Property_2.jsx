@@ -2,14 +2,10 @@ import image_1 from "../assets/image-1.jpg";
 import image_2 from "../assets/image2.jpg";
 import image_3 from "../assets/image3.jpg";
 
-
-
 function Property_2() {
   return (
     <div>
-
       <div className="flex w-full">
-
         <div className="text-center w-1/2 bg-gradient-to-r from-orange-500 to-white-500 ">
           <div className="my-41">
             <h1 className="font-bold text-3xl">Fully Responsive Design</h1>
@@ -23,16 +19,14 @@ function Property_2() {
               phone, tablet, or desktop the page will behave responsively!
             </p>
           </div>
-        </div >
+        </div>
 
         <div className="w-1/2">
           <img src={image_2} />
         </div>
-
       </div>
 
       <div className="flex w-full">
-
         <div className="w-1/2">
           <img src={image_1} />
         </div>
@@ -51,12 +45,10 @@ function Property_2() {
             </p>
           </div>
         </div>
-
       </div>
 
       <div className="flex w-full">
-
-        <div className="text-center w-1/2 bg-gradient-to-r from-white-500 to-gray-500">
+        <div className="text-center w-1/2 bg-gradient-to-r from-gray-500 to-white-500">
           <div className="my-41">
             <h1 className="font-bold text-3xl">Easy to Use & Customize</h1>
             <p className="py-0.5">
@@ -68,19 +60,14 @@ function Property_2() {
             <p className="py-0.5">
               the box, just add your content and images, and your new landing
             </p>
-            <p className="py-0.5">
-              page will be ready to go!
-            </p>
+            <p className="py-0.5">page will be ready to go!</p>
           </div>
         </div>
 
         <div className="w-1/2">
           <img src={image_3} />
         </div>
-
       </div>
-
-
     </div>
   );
 }
