@@ -11,6 +11,7 @@ import EnquiryForm from './components/EnquiryForm';
 import Calculator from './calculator';
 import Todo from './todo';
 import Shop from './shop';
+import Login from './login.tsx';
 
 function App() {
   const signupRef = useRef(null);
@@ -54,6 +55,9 @@ function App() {
 
         {/* Shop Page */}
         <Route path="/shop" element={<Shop />} />
+
+        {/* Shop Page */}
+        <Route path="/login" element={<Login />} />
       </Routes>
     </>
   );
