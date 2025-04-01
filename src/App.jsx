@@ -12,6 +12,7 @@ import Calculator from './calculator';
 import Todo from './todo';
 import Shop from './shop';
 import Login from './login.tsx';
+import WeatherInfo from "./components/WeatherInfo";
 
 function App() {
   const signupRef = useRef(null);
@@ -20,8 +21,8 @@ function App() {
   const scrollToSignup = () => {
     if (signupRef.current) {
       signupRef.current.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
+        behavior: "smooth",
+        block: "start",
       });
     }
   };
@@ -58,6 +59,8 @@ function App() {
 
         {/* Shop Page */}
         <Route path="/login" element={<Login />} />
+
+        <Route path="/weatherdata" element={<WeatherInfo />} />
       </Routes>
     </>
   );
