@@ -37,7 +37,7 @@ function WeatherInfo() {
                 <tr key={station.name} className="text-center">
                   <td className="px-2 py-2 border">{station.name}</td>
                   <td className="px-2 py-2 border">{station.location.latitude}</td>
-                  <td className="px-2 py-2 border">{reading ? reading.value : "N/A"}
+                  <td className="px-2 py-2 border">{reading ? reading.value : "N/A"}</td>
                 </tr>
               );
             })}
