@@ -12,23 +12,23 @@ function Properties() {
                 <MdOutlineScreenshotMonitor size={150} color="black"/>
                 </div>
                 <h1 className="font-bold text-2xl my-2">Fully Responsive</h1>
-                <p>Life is full of colors</p>
-                <p>Some are vibrant and some are dull</p>
+                <p>This theme will look great on any</p>
+                <p>device, no matter size</p>
             </div>
             <div className="text-center">
                 <div className="mx-11">
                     <BsBootstrapFill size={150} color="black"/>
                 </div>
                 <h1 className="font-bold text-2xl my-2">Bootstrap 5 Ready</h1>
-                <p>but there will always be this particular color</p>
-                <p>which will forever be etched in the mind</p>
+                <p>Featuring the latest build of the new</p>
+                <p>Bootstrap 5 framework!</p>
             </div>
             <div className="text-center">
                 <div className="mx-11">
                     <BsTerminalFill size={150} color="black"/>
                 </div>
                 <h1 className="font-bold text-2xl my-2">Easy to Use</h1>
-                <p>It all happened about two year ago</p>
+                <p>Ready to use with your own content,</p>
                 <p>or customize the source files!</p>
             </div>
         </div>
