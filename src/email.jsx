@@ -1,6 +1,7 @@
-function Email() {
+function Email({name}) {
     return <>
         <div className="flex w-full h-screen justify-center items-center text-white flex-col bg-[url('./src/assets/bg-masthead.jpg')] bg-cover bg-center">
+            <h2>Welcome: {name}</h2>
             <div className="flex w-2/4 justify-center items-center text-center tracking-widest">
                 <h1 className="text-5xl leading-tight font-semibold">Generate more leads with a professional landing page!</h1>
             </div>

@@ -27,6 +27,8 @@ function App() {
     }
   };
 
+  const saved = localStorage.getItem("username");
+
   return (
     <>
       <NavBar scrollToSignup={scrollToSignup} setOpen={setOpen} />
@@ -36,7 +38,10 @@ function App() {
           path="/"
           element={
             <>
-              <Email />
+              {saved && saved !== "" && (
+                <Email name={saved} />
+              )}
+              {!saved && <Email name="User"/>}
               <Properties />
               <Property_2 />
               <People />
