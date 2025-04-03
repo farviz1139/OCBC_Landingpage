@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useEffect ,useRef, useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import NavBar from './components/NavBar';
 import Email from './email';
@@ -17,6 +17,7 @@ import WeatherInfo from "./components/WeatherInfo";
 function App() {
   const signupRef = useRef(null);
   const [open, setOpen] = useState(false);
+  const [saved, setSaved] = useState(null);
 
   const scrollToSignup = () => {
     if (signupRef.current) {
@@ -27,7 +28,10 @@ function App() {
     }
   };
 
-  const saved = localStorage.getItem("username");
+  useEffect(() => {
+    const username = localStorage.getItem("username");
+    setSaved(username);
+  }, []);
 
   return (
     <>
@@ -38,10 +42,11 @@ function App() {
           path="/"
           element={
             <>
-              {saved && saved !== "" && (
+              {saved && saved !== "" ? (
                 <Email name={saved} />
+              ) : (
+                <Email name="User"/>
               )}
-              {!saved && <Email name="User"/>}
               <Properties />
               <Property_2 />
               <People />
