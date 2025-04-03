@@ -31,7 +31,7 @@ function WeatherInfo() {
             </tr>
           </thead>
           <tbody className="border">
-            {stations.map((station) => {
+            {stations.map((station) => {  
               const reading = readings.find((r) => r.station_id === station.id);
               return (
                 <tr key={station.name} className="text-center">
